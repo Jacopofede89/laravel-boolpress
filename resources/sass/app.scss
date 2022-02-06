@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    background-color: black;
+}
+
+.register, .login, h1{
+    color:white;
+}
+
+.container{
+    color: black;
+    background-color: white;
+}
+
+.create{
+    color: white;
+    h3{
+        padding: 20px;
+    }
+}
