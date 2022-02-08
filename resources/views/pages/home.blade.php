@@ -69,6 +69,8 @@
 
                 <p>Data: {{$post -> release_date}}</p>
 
+                <p>Categoria:{{$post -> category -> name}}</p>
+
                 <p class="description-post">Descrizione: {{$post -> description}}</p>
     
             </div>

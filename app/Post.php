@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Category;
 
 class Post extends Model
 {
@@ -13,4 +14,9 @@ class Post extends Model
         'description',
         'release_date'
     ];
+
+    public function category() {
+        
+        return $this -> belongsTo(Category::class);
+    }
 }

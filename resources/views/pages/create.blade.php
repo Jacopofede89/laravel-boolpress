@@ -1,7 +1,7 @@
 @extends('layouts.main-layout')
 @section('content')
 <div class="create">
-    <h2>Crea il tuo post personalizzato!</h2>
+    <h2>Crea il tuo post!</h2>
 
         @if ($errors->any())
             <div class="alert alert-danger">
@@ -30,6 +30,12 @@
 
         <label for="description">Descrizione:</label>
         <input class="form-control" type="text" name="description" placeholder="Descrizione"><br>
+
+        <select name="category_id">
+            @foreach ($categories as $category)
+                <option value="{{$category -> id}}">{{$category -> name}}</option>
+            @endforeach
+        </select>
 
         <input type="submit" value="CREATE">
     </form>
