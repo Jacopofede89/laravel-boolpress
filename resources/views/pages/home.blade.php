@@ -72,6 +72,10 @@
                 <p>Categoria:{{$post -> category -> name}}</p>
 
                 <p class="description-post">Descrizione: {{$post -> description}}</p>
+                
+                <p>@foreach ($posts -> tags as $tag)
+                    {{$tag -> name}}
+                @endforeach</p>
     
             </div>
 

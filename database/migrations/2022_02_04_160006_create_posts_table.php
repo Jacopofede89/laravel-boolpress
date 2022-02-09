@@ -17,7 +17,7 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->string('title', 60) ->unique();
             $table->string('author', 60);
-            $table->string('description');
+            $table->string('description', 200);
             $table->date('release_date');
             $table->timestamps();
             $table->unsignedBigInteger('category_id')->nullable();
