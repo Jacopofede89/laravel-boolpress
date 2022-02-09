@@ -73,9 +73,12 @@
 
                 <p class="description-post">Descrizione: {{$post -> description}}</p>
                 
-                <p>@foreach ($posts -> tags as $tag)
+                <p>@foreach ($post -> tags as $tag)
                     {{$tag -> name}}
                 @endforeach</p>
+
+                <p><a class="btn btn-secondary" href="{{route('edit', $post -> id)}}">Edit</a></p>
+                <p><a class="btn btn-danger" href="{{route('delete', $post -> id)}}">Delete</a></p>
     
             </div>
 

@@ -33,3 +33,7 @@ Route::get('/logout', 'Auth\LoginController@logout') -> name('logout');
 Route::post('/store', 'GuestController@store') -> name('store');
 
 Route::get('/create', 'GuestController@create')->name('create');
+
+Route::get('/edit/{id}', 'GuestController@edit') ->name('edit');
+Route::post('/update/{id}', 'GuestController@update') ->name('update');
+Route::get('/delete/{id}', 'GuestController@delete') ->name('delete');
